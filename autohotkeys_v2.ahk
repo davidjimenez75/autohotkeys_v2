@@ -4,9 +4,22 @@
 
 #RButton:: Send "^#{Right}"		; Win + Right mouse Click = Next virtual desktop
 
+
+; --------------------------------
 ; Scroll Lock = Mute for X seconds
+; --------------------------------
 ScrollLock::{
 	Send "{Volume_Mute}"
-	Sleep 30*1000
+	Sleep 60*1000
 	Send "{Volume_Mute}"
 }
+
+Pause:: Send "{Media_Play_Pause}" ; Pause = Multimedia Pause
+
+NumpadDiv:: Send "{Media_Prev}" ; Pause = Multimedia Pause
+
+NumpadMult:: Send "{Media_Next}" ; Pause = Multimedia Pause
+
+NumpadAdd:: Send "{Volume_Up}" ; Pause = Multimedia Pause
+
+NumpadSub:: Send "{Volume_Down}" ; Pause = Multimedia Pause
