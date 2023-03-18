@@ -1,4 +1,4 @@
-# autohotkeys_v2
+# autohotkeys_v2 
 
 Shotcurts for autohotkey v2
 
@@ -14,4 +14,19 @@ Virtual dekstops tasks   = Win + central mouse click
 Previous virtual dekstop = Win + left click
 ```
 
+## SCROLL LOCK - PAUSE XX SECONDS
+
+```
+ScrollLock = Mute xx seconds
+```
+
+## EMULATES MULTIMEDIA KEYS WITH NUMPAD
+
+```
+- Pause = Multimedia Pause
+- NumpadDiv = Prev 
+- NumpadMult = Next
+- NumpadAdd = Volume up
+- NumpadSub = Volume down
+```
 
