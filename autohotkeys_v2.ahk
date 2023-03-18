@@ -1,6 +1,7 @@
 ﻿; NAME = autohotkeys_v2 
+; VERSION = 2023-03-18--1258
 ; SOURCE = https://github.com/davidjimenez75/autohotkeys_v2
-; VERSION = 2023-03-18
+; AUTOHOTKEY V2 - DOCUMENTATION = https://www.autohotkey.com/docs/v2/
 
 ; ----------------------------------------------
 ; Change Virtual desktops with Win key + Mouse
@@ -26,3 +27,14 @@ NumpadDiv:: Send "{Media_Prev}" ; NumpadDiv = Prev
 NumpadMult:: Send "{Media_Next}" ; NumpadMult = Next
 NumpadAdd:: Send "{Volume_Up}" ; NumpadAdd = Volume up
 NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
+
+
+; ------------------------------------------------
+; Create folder with current timestamp on desktop
+; ------------------------------------------------
+#ScrollLock::{
+	now := FormatTime(,"yyyy-MM-dd-HHmmss--")
+	DirCreate (A_Desktop "\" now)
+	; MsgBox "Creada carpeta: " A_Desktop "\" now
+	FileAppend "# ", A_Desktop "\" now "\HEADER.md"
+}
