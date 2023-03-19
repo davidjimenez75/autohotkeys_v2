@@ -3,12 +3,14 @@
 ; SOURCE = https://github.com/davidjimenez75/autohotkeys_v2
 ; AUTOHOTKEY V2 - DOCUMENTATION = https://www.autohotkey.com/docs/v2/
 
+
 ; ----------------------------------------------
 ; Change Virtual desktops with Win key + Mouse
 ; ----------------------------------------------
 #LButton:: Send "^#{Left}"		; Win + Right mouse Click = Prev. virtual desktop
 #MButton:: Send "#{Tab}"		; Win + Middle mouse Click = Show virtual desktops
 #RButton:: Send "^#{Right}"		; Win + Right mouse Click = Next virtual desktop
+
 
 ; ---------------------------------
 ; Scroll Lock = Mute for X seconds
@@ -18,6 +20,7 @@ ScrollLock::{
 	Sleep 60*1000
 	Send "{Volume_Mute}"
 }
+
 
 ; -------------------------------------
 ; Emulate multimedia keys with numpad
@@ -33,8 +36,9 @@ NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
 ; Create folder with current timestamp on desktop
 ; ------------------------------------------------
 #ScrollLock::{
-	now := FormatTime(,"yyyy-MM-dd-HHmmss--")
+	now := FormatTime(,"yyyy-MM-dd--HHmmss--")
 	DirCreate (A_Desktop "\" now)
 	; MsgBox "Creada carpeta: " A_Desktop "\" now
 	FileAppend "# ", A_Desktop "\" now "\HEADER.md"
 }
+
