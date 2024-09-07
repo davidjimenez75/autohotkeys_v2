@@ -1,12 +1,19 @@
 # autohotkeys_v2 
 
-Some ready to use shorcuts for autohotkey v2.
+Some ready to use shorcuts for AutoHotkey v2
+
+- [AutoHotjey Homepage](https://www.autohotkey.com/)
 
 - [AutoHotkey Beginner Tutorial by tidbit](https://lexikos.github.io/v2/docs/Tutorial.htm)
 
 - [AutoHotkey Script Showcase](https://lexikos.github.io/v2/docs/scripts/index.htm)
 
-## MOVE BETWEEN VIRTUAL DESKTOPS
+
+## SHORTCUTS
+
+### VIRTUAL DESKTOPS
+
+Fast move between Windows Virtual Desktops.
 
 ```
 Next virtual desktop     = Win + right click
@@ -14,13 +21,17 @@ Virtual dekstops tasks   = Win + central mouse click
 Previous virtual dekstop = Win + left click
 ```
 
-## SCROLL LOCK = PAUSE XX SECONDS
+### MUTE
+
+Mute audio for xx seconds (60 second by default).
 
 ```
 ScrollLock = Mute xx seconds
 ```
 
-## NUMPAD = EMULATES MULTIMEDIA KEYS
+### EMULATES MULTIMEDIA CONTROL KEYS ON REGULAR KEYBOARDS
+
+Work with most of media players: VLC, Foobar2000, Spotify, etc.
 
 ```
 - Pause = Multimedia Pause
@@ -30,6 +41,14 @@ ScrollLock = Mute xx seconds
 - NumpadSub = Volume down
 ```
 
-## WIN + SCROLL LOCK = CREATE DESKTOP FOLDER YYYY-MM-DD--HHMMSS--
+### DATETIME FOLDERS
 
-Create folder with current timestamp on desktop
+Create folder with current timestamp on Desktop.
+
+```
+Win + Scroll Lock = CREATE DESKTOP FOLDER YYYY-MM-DD--HHMMSS--
+```
+
+
+
+

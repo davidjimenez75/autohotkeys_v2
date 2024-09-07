@@ -1,5 +1,5 @@
 ﻿; NAME = autohotkeys_v2 
-; VERSION = 2023-12-03-0856
+; VERSION = 2024.09.07
 ; SOURCE = https://github.com/davidjimenez75/autohotkeys_v2
 ; AUTOHOTKEY V2 - DOCUMENTATION = https://www.autohotkey.com/docs/v2/
 
@@ -42,6 +42,7 @@ NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
 	FileAppend "# ", A_Desktop "\" now "\HEADER.md"
 }
 
+
 ; ------------------------------------------------
 ; Minimice actual windows on double tap on Esc key
 ; ------------------------------------------------
@@ -53,6 +54,7 @@ NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
 	WinMinimize "A" 
     }
 }
+
 
 ; -----------------------------------------------------
 ; Microsoft Edge browser play/pause text reading voice 
