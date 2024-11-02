@@ -73,12 +73,18 @@ NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
 +Pause::  ; Ctrl + Pause
 {
     Send "{AppsKey}"  ; Right-click menu
-    Sleep 10
+    Sleep 200
     Send "{p}"  ; To Propiedades
-    Sleep 10
-    Send "^{Tab 4}"  ; ^ es el símbolo para Ctrl y envia 4 veces Ctrl + tab
-    Sleep 10
+    Sleep 200
+    Send "^{Tab}" ; ^ es el símbolo para Ctrl y envia 4 veces Ctrl + tab
+    Sleep 200
+    Send "^{Tab}"
+    Sleep 200
+    Send "^{Tab}"
+    Sleep 200
+    Send "^{Tab}"
+    Sleep 200
     Send "{R}"  ; Restaurar predeterminado
-    Sleep 10
-    Send "{Enter}"  ; Click to Restaurar predeterminado
+    Sleep 200
+    Send "{Enter}"  ; Aceptar
 }
