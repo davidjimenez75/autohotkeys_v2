@@ -1,7 +1,13 @@
 ﻿; NAME = autohotkeys_v2 
-; VERSION = 2023-12-03-0856
+; VERSION = 2024.11.02.0928
 ; SOURCE = https://github.com/davidjimenez75/autohotkeys_v2
 ; AUTOHOTKEY V2 - DOCUMENTATION = https://www.autohotkey.com/docs/v2/
+;
+; NOTES:
+;
+;  ^ for Ctrl
+;  ! for Alt 
+;  + for Shift
 
 
 ; ----------------------------------------------
@@ -26,8 +32,8 @@ ScrollLock::{
 ; Emulate multimedia keys with numpad
 ; -------------------------------------
 Pause:: Send "{Media_Play_Pause}" ; Pause = Multimedia Pause
-#NumpadDiv:: Send "{Media_Prev}" ; NumpadDiv = Prev 
-#NumpadMult:: Send "{Media_Next}" ; NumpadMult = Next
+^NumpadDiv:: Send "{Media_Prev}" ; Ctrl + NumpadDiv = Prev 
+^NumpadMult:: Send "{Media_Next}" ; Ctrl + NumpadMult = Next
 NumpadAdd:: Send "{Volume_Up}" ; NumpadAdd = Volume up
 NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
 
@@ -61,4 +67,18 @@ NumpadSub:: Send "{Volume_Down}" ; NumpadSub = Volume down
 
 
 
-
+; -----------------------------------------------------
+; Restore the current selected folder icons
+; -----------------------------------------------------
++Pause::  ; Ctrl + Pause
+{
+    Send "{AppsKey}"  ; Right-click menu
+    Sleep 10
+    Send "{p}"  ; To Propiedades
+    Sleep 10
+    Send "^{Tab 4}"  ; ^ es el símbolo para Ctrl y envia 4 veces Ctrl + tab
+    Sleep 10
+    Send "{R}"  ; Restaurar predeterminado
+    Sleep 10
+    Send "{Enter}"  ; Click to Restaurar predeterminado
+}
